@@ -1,4 +1,12 @@
-const { defineConfig } = require('@vue/cli-service')
+const { defineConfig } = require('@vue/cli-service');
 module.exports = defineConfig({
-  transpileDependencies: true
-})
+  transpileDependencies: true,
+  devServer: {
+    proxy: {
+      '/save-score': {
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+      },
+    },
+  },
+});
