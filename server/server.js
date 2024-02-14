@@ -28,7 +28,7 @@ connectToDatabase();
 app.use(express.json());
 app.post('/save-score', async (req, res) => {
   const { username, score } = req.body;
-
+  await client.connect();
   try {
     const database = client.db('moja_baza_danych');
     const collection = database.collection('scores');
