@@ -1,4 +1,5 @@
 # gra-snake
+![Zrzut ekranu 2025-02-04 195359](https://github.com/user-attachments/assets/583a0dc8-83a0-4d70-a354-a5e0ced30448)
 
 ## Project setup
 ```
